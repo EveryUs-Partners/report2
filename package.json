@@ -1,0 +1,14 @@
+{
+  "name": "convenience-store-shift-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "편의점 2곳 직원 근무시간(출퇴근) 입력 웹앱 - Netlify Functions + Blobs",
+  "scripts": {
+    "dev": "netlify dev",
+    "test": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
