@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # 위치정보(GPS)는 이 사이트 자신만 사용 가능
+    Permissions-Policy = "geolocation=(self)"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
